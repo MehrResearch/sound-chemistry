@@ -7,6 +7,9 @@ jobs:
   fetch-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
       - name: Install wget
         run: |
           sudo apt-get -q update
