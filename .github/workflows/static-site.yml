@@ -28,6 +28,7 @@ jobs:
             --convert-links \
             --no-parent \
             https://sound-chemistry.science
+          mv sound-chemistry.science/* .
           
           # Create .nojekyll file to prevent GitHub Pages from using Jekyll
           touch .nojekyll
